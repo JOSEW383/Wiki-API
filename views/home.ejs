@@ -1,0 +1,47 @@
+<%- include('partials/header'); -%>
+
+<div class="container py-3">
+    <h1>Wiki-API</h1>
+
+    <p>RESTful API that allows for the creation, retrieval, update, and deletion of articles stored in a MongoDB database. It is built using Node.js and the Express.js framework, with EJS for HTML templating and Body Parser for request body parsing. The MongoDB database is accessed and managed through Mongoose, an Object Document Mapper (ODM) for MongoDB and Node.js. With its well-defined routes and functionality, the app provides a simple and effective way to interact with the database.</p>
+
+    <div class="shadow-sm p-3 mb-5 bg-white rounded">
+        <h2>Usage</h2>
+        <ol>
+        <li>Start the server by running the code file on a Node.js environment</li>
+        <li>Use any API client (e.g. Postman) to send requests to the API</li>
+        <li>The API will respond with data in JSON format</li>
+        <li>Endpoints listed in the API section can be used for performing various actions on articles</li>
+        </ol>
+    </div>
+
+    <div class="shadow-sm p-3 mb-5 bg-white rounded">
+        <h2>Endpoints</h2>
+        <ul>
+        <li><strong>GET</strong> /articles - Retrieves all articles</li>
+        <li><strong>POST</strong> /articles - Creates a new article</li>
+        <li><strong>DELETE</strong> /articles - Deletes all articles</li>
+        </ul>
+
+        <ul>
+        <li><strong>GET</strong> /articles/:articleTitle - Retrieves a specific article by its title</li>
+        <li><strong>PUT</strong> /articles/:articleTitle - Updates a specific article by its title</li>
+        <li><strong>PATCH</strong> /articles/:articleTitle - Partially updates a specific article by its title</li>
+        <li><strong>DELETE</strong> /articles/:articleTitle - Deletes a specific article by its title</li>
+        </ul>
+    </div>
+
+    <div class="shadow-sm p-3 mb-5 bg-white rounded">
+        <h2>Technology Stack</h2>
+        <ul>
+        <li><strong>Node.js</strong>: A server-side JavaScript environment</li>
+        <li><strong>Express.js</strong>: A Node.js framework for building web applications</li>
+        <li><strong>EJS</strong>: A templating engine for generating HTML views</li>
+        <li><strong>Body Parser</strong>: A middleware for parsing incoming request bodies</li>
+        <li><strong>MongoDB</strong>: A cross-platform document-oriented database</li>
+        <li><strong>Mongoose</strong>: An Object Document Mapper (ODM) for MongoDB and Node.js</li>
+        </ul>
+    </div>
+</div>
+
+<%- include('partials/footer'); -%>

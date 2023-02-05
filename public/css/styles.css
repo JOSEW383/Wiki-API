@@ -1,0 +1,14 @@
+body {
+	background-color: #EEE9DA;
+}
+
+.footer {
+	position: relative;
+	text-align: center;
+	height: 30px;
+	background-color: #8CC0DE;
+}
+
+.footer p {
+  	color: #fff;
+}
